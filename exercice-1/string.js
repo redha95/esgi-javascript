@@ -1,44 +1,46 @@
-function ucfirst(){
-    var helloworld = "hello world";
+//var helloworld = "hello world";
+function ucfirst(helloworld){
+   
     console.log(helloworld.charAt(0).toUpperCase() + helloworld.slice(1));
     
 }
-ucfirst();
+ucfirst(helloworld);
 
-function capitalize(){
-    var text = "hello world";
+function capitalize(text){
+   // var text = "hello world";
 text = text.toLowerCase()
     .split(' ')
     .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
     .join(' ');
 console.log(text);
 }
-capitalize();
+capitalize(text);
 
-function camelCase() {
-    var text = "hello world";
-text = text.toLowerCase()
-    .split(' ')
-    .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
-    .join(' ');
+function camelCase(text) {
+   // var text = "hello world";
+    text = text.toLowerCase()
+        .split(' ')
+        .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+        .join(' ');
     text = text.replace(/\s+/g, '');
 
 console.log(text);
 
 }
-camelCase();
+camelCase(text);
  
  console.log(camelCase("hello world"));
 
-function snake_case(){
-    var str = 'hello world !';
+function snake_case(str){
+    //var str = 'hello world !';
     str = str.replace(/\s+/g, '_');
     console.log(str);
 }
-snake_case();
+snake_case(str);
 
-function leet(){ // ne marche pas
-    var anaconda = "anaconda";
+var anaconda = "anaconda";
+function leet(anaconda){ // ne marche pas
+    
 
     var spt = anaconda.split('');
    
@@ -75,11 +77,26 @@ function leet(){ // ne marche pas
     }
     console.log(anaconda);
 }
-leet();
+leet(anaconda);
 
 function prop_access(objet,chemin){
 
-
-
+    [
+        {
+            "animals":[
+            {
+                "type":{
+                    "name": "dog"
+                }
+            },
+            {
+                "type":{
+                    "name": "cat"
+                }
+            }
+           ]
+        }
+    ]
 
 }
+
