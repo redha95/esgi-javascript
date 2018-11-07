@@ -1,8 +1,8 @@
 
-var helloworld = "helloworld";
 
-var ucfirst = function(helloworld){
 
-return console.log(helloworld.charAt(0).toUpperCase() + string.slice(1));
+var ucfirst = function(){
+    var helloworld = "helloworld";
+    console.log(helloworld.charAt(0).toUpperCase() + helloworld.slice(1));
     
 }
