@@ -79,24 +79,24 @@ function leet(anaconda){ // ne marche pas
 }
 leet(anaconda);
 
-function prop_access(objet,chemin){
+// function prop_access(objet,chemin){
 
-    [
-        {
-            "animals":[
-            {
-                "type":{
-                    "name": "dog"
-                }
-            },
-            {
-                "type":{
-                    "name": "cat"
-                }
-            }
-           ]
-        }
-    ]
+//     [
+//         {
+//             "animals":[
+//             {
+//                 "type":{
+//                     "name": "dog"
+//                 }
+//             },
+//             {
+//                 "type":{
+//                     "name": "cat"
+//                 }
+//             }
+//            ]
+//         }
+//     ]
 
-}
+// }
 
