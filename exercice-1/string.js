@@ -1,6 +1,3 @@
-
-
-
 function ucfirst(){
     var helloworld = "hello world";
     console.log(helloworld.charAt(0).toUpperCase() + helloworld.slice(1));
@@ -25,8 +22,49 @@ function snake_case(){
 }
 snake_case();
 
-function leet(){
+function leet(){ // ne marche pas
+    var anaconda = "anaconda";
+
+    var spt = anaconda.split('');
+   
+
+    for(i=0;i<spt.length;i++){
+
+        switch(spt[i]){
+            case "a":
+            var regex = /a/gi;
+            anaconda = anaconda.replace(regex,"4");
+            break;
+            case "e":
+            var regex = /e/gi;
+            anaconda = anaconda.replace(regex,"3");
+            break;
+            case "i":
+            var regex = /i/gi;
+            anaconda = anaconda.replace(regex,"1");
+            break;
+            case "o":
+            var regex = /o/gi;
+            anaconda = anaconda.replace(regex,"0");
+            break;
+            case "u":
+            var regex = /u/gi;
+            anaconda = anaconda.replace(regex,"_");
+            break;
+            case "y":
+            var regex = /y/gi;
+            anaconda = anaconda.replace(regex,"7");
+            break;
+        }
+        
+    }
+    console.log(anaconda);
+}
+leet();
+
+function prop_access(objet,chemin){
+
+
 
 
 }
-leet();
