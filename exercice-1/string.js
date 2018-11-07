@@ -1,4 +1,4 @@
-//var helloworld = "hello world";
+var helloworld = "hello world";
 function ucfirst(helloworld){
    
     console.log(helloworld.charAt(0).toUpperCase() + helloworld.slice(1));
@@ -6,8 +6,9 @@ function ucfirst(helloworld){
 }
 ucfirst(helloworld);
 
+var text = "hello world";
 function capitalize(text){
-   // var text = "hello world";
+   // 
 text = text.toLowerCase()
     .split(' ')
     .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
@@ -29,8 +30,8 @@ console.log(text);
 }
 camelCase(text);
  
- console.log(camelCase("hello world"));
 
+ var str = 'hello world !';
 function snake_case(str){
     //var str = 'hello world !';
     str = str.replace(/\s+/g, '_');
