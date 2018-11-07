@@ -15,6 +15,21 @@ console.log(text);
 }
 capitalize();
 
+function camelCase() {
+    var text = "hello world";
+text = text.toLowerCase()
+    .split(' ')
+    .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+    .join(' ');
+    text = text.replace(/\s+/g, '');
+
+console.log(text);
+
+}
+camelCase();
+ 
+ console.log(camelCase("hello world"));
+
 function snake_case(){
     var str = 'hello world !';
     str = str.replace(/\s+/g, '_');
